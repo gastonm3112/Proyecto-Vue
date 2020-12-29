@@ -8,17 +8,18 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Vue -->
     <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>{{title}}</h1>
+    <div id="app" class="app">
+      <h1 class="title">{{title}}</h1>
       <hr />
-      <h3>{{count}}</h3>
+      <h3 class="count">{{count}}</h3>
       <hr />
 
-      <div class="buttons">
+      <div>
         <button>-1</button>
         <button>+1</button>
       </div>
