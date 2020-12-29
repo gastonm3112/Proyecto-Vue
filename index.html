@@ -8,7 +8,17 @@
     <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>{{title}}</h1>
+      <hr />
+      <h3>{{count}}</h3>
+      <hr />
+
+      <div class="buttons">
+        <button>-1</button>
+        <button>+1</button>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/mountApp.js"></script>
