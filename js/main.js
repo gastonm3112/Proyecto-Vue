@@ -8,11 +8,11 @@ const app = Vue.createApp({
 
     methods: {
         decreaseCount(){
-            console.log("decrease");
+            this.count -= 1;
         },
 
         addCount(){
-            console.log("add");
+            this.count += 1;
         }
     }
 })
