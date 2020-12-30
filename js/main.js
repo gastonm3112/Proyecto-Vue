@@ -7,12 +7,16 @@ const app = Vue.createApp({
     },
 
     methods: {
-        decreaseCount(){
-            this.count -= 1;
+        modCount(instruction = "add"){
+            if(instruction === "decrease"){
+                this.count -= 1;
+            } else {
+                this.count += 1;
+
+            }
+            
         },
 
-        addCount(){
-            this.count += 1;
-        }
-    }
+       
+    },
 })
