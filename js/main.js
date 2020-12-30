@@ -12,11 +12,7 @@ const app = Vue.createApp({
                 this.count -= 1;
             } else {
                 this.count += 1;
-
-            }
-            
-        },
-
-       
+            }            
+        }, 
     },
 })
