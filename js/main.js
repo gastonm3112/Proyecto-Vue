@@ -3,6 +3,16 @@ const app = Vue.createApp({
         return {
             title: "Contador App - Vue",
             count: 0,
+        };
+    },
+
+    methods: {
+        decreaseCount(){
+            console.log("decrease");
+        },
+
+        addCount(){
+            console.log("add");
         }
     }
 })
