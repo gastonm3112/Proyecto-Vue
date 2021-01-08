@@ -1,0 +1,12 @@
+{
+    "name": "App Contador",
+    "short_name": "Contador Vue",
+    "description": "Este contador es mi primer proyecto realizado con Vue",
+    "background_color": "#35495e",
+    "theme_color": "#41b883",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-AR",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
