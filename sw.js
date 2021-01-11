@@ -14,4 +14,12 @@ const urlsToCache = [
     "https://unpkg.com/vue@next",
     "./css/style.css",
     "https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-]
+];
+
+self.addEventListener("install", e => {
+    e.waitUntil(
+        cache => cache.addAll(urlsToCache)
+        .then( () => self.skipWaiting() )
+        .catch(err => console.log(err))
+    )
+});
