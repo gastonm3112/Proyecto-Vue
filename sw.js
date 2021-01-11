@@ -50,3 +50,17 @@ self.addEventListener("activate", e => {
         )
     )
 });
+
+//Escuchando fetch, actualizar cache
+self.addEventListener("fetch", (e) => {
+    e.respondWith(
+        caches.match(e.request).then(
+            (res) => {
+                if(res) {
+                    return res;
+                }
+                return fetch(e.request);
+            }
+        )
+    )
+})
