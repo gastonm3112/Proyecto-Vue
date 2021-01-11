@@ -16,10 +16,37 @@ const urlsToCache = [
     "https://necolas.github.io/normalize.css/8.0.1/normalize.css"
 ];
 
+// Escuchando evento install para agregar caches
 self.addEventListener("install", e => {
     e.waitUntil(
+        caches.open(CACHE_NAME)
+        .then(
         cache => cache.addAll(urlsToCache)
         .then( () => self.skipWaiting() )
         .catch(err => console.log(err))
+        )
+    )
+});
+
+//Escuchando evento activate
+self.addEventListener("activate", e => {
+    const cacheWhiteList = [CACHE_NAME]
+
+    e.waitUntil(
+        caches.keys()
+        .then(
+            cacheNames => {
+                return Promise
+                .all(cacheNames.map(
+                   cacheName => {
+                       if(cacheWhiteList.indexOf(cacheName) === -1) {
+                           return caches.delete(cacheName)
+                       }
+                   } 
+                ))
+            }
+        ).then(
+            () => self.clients.claim()
+        )
     )
 });
