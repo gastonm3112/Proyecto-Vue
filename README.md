@@ -33,12 +33,12 @@ Desde Github Desktop:
 5. Seleccionar carpeta de Destino
 
 Ya tienes el Proyecto en tu PC. 
-PD: Para comenzar directamente desde el paso 4 simpleente utilizar el comando 
+PD: Para comenzar directamente desde el paso 4 simplemente utilizar el comando 
 ~~~
 Ctrl+Shift+O
 ~~~
 ## Instalación
-No necesitas instalar nada, una vez descargado el Proyecto simplemene abrelo en tu Navegador
+No necesitas instalar nada, una vez descargado el Proyecto  abrelo en tu Navegador
 
 ## Notas
 Agradecimientos a Yirsis Hertz por su curso de Vue 3 desde Cero  
