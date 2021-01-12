@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metadata de PWA -->
+    <!-- Modificación color de barra de estado en ANDROID -->
+    <meta name="theme-color" content="#41b883" />
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Modificar barra de estado en IOS -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
+    <link rel="apple-touch-startup-image" href="./img/favicon.png" />
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
     <title>Contador App</title>
     <link
       rel="stylesheet"
@@ -24,7 +43,7 @@
         <button @click="modCount">+1</button>
       </div>
     </div>
-
+    <script src="./load.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mountApp.js"></script>
   </body>
