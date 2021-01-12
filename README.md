@@ -4,7 +4,7 @@ Aplicación Web Progresiva (PWA) Contador realizado con Vue.js 3 utilizando *Ser
 ## Contenido
 Este proyecto posee dos ramas:
 
-- Master: Es la rama principal, aquí solo debe agregarse archivos quehan sido probados
+- Master: Es la rama principal, aquí solo debe agregarse archivos que han sido probados
 - DevTest: Es la rama de trabajo, donde recomiendo realizar cualquier tipo de cambio al Proyecto
 
 ## Demo
@@ -18,8 +18,10 @@ Desde la página de Github:
 2. Copiar enlace al Portapapeles
 3. Abrir Terminal
 4. seleccionar carpeta de destino
-5. git clone + URL copiada
-
+5. 
+~~~
+git clone + URL copiada
+~~~
 ***Exito!*** Ya tienes el proyecto en tu PC.
 
 Desde Github Desktop:
@@ -31,14 +33,16 @@ Desde Github Desktop:
 5. Seleccionar carpeta de Destino
 
 Ya tienes el Proyecto en tu PC. 
-PD: Para comenzar directamente desde el paso 4 simpleente utilizar el comando ***Ctrl+Shift+O***
-
+PD: Para comenzar directamente desde el paso 4 simpleente utilizar el comando 
+~~~
+Ctrl+Shift+O
+~~~
 ## Instalación
 No necesitas instalar nada, una vez descargado el Proyecto simplemene abrelo en tu Navegador
 
 ## Notas
-Agradecimientos a Yirsis Hertz por su curso de Vue 3 desde Cero
-Si quieres saber más sobre [PWA](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)
+Agradecimientos a Yirsis Hertz por su curso de Vue 3 desde Cero  
+Si quieres saber más sobre [PWA](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)  
 Si quieres saber más sobre [Service Workers](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API)
 
 
